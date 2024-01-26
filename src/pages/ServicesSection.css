@@ -1,0 +1,46 @@
+.services{
+    background-color: #9EB384;
+}
+.services .boxes {
+    display: flex;
+    justify-content: space-between;
+    color: #9EB384;
+  }
+  
+  .services .boxes .box {
+    margin: 20px 0;
+    width: calc(100% / 3 - 20px);
+    border-radius: 12px;
+    padding: 30px 10px;
+    box-shadow: 0 5px 10px #577d86;
+    cursor: default;
+  }
+  .services .boxes .box:hover{
+    background-color: white;
+    color: crimson;
+}
+.services .boxes .box .icon{
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    color: crimson;
+    margin: 0 auto 10px auto;
+    transition: all 0.4s ease;   
+}
+.boxes .box:hover .icon{
+    background-color: plum;
+    color: aquamarine;
+}
+.services .boxes .box:hover .topic, .services .boxes .box:hover p{
+    color: crimson;
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .services .boxes .box {
+        width: calc(50% - 20px); /* Two boxes per row */
+    }
+}

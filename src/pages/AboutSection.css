@@ -1,0 +1,101 @@
+/* About Section Styling */
+.abouts{
+background-color: #9EB384;
+}
+
+
+.about-section .content {
+  margin: 40px auto;
+  width: 80%;
+  background-color: plum;
+}
+
+.about-section .about-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about-section .title {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+.about-section .title span {
+  color: white;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.about-section .title span::before,
+.about-section .title span::after {
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+}
+
+.about-section .title span::after {
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .about-section .content {
+    width: 90%; /* Adjusted width for smaller screens */
+  }
+
+  .about-section .about-details {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: flex-start; /* Align items to start on smaller screens */
+  }
+
+  .about-section .title {
+    margin-bottom: 10px; /* Reduced margin for better spacing on smaller screens */
+  }
+
+  .about-section .title span {
+    font-size: 24px; /* Reduced font size for smaller screens */
+  }
+}
+
+.about-section .about-details .left {
+  width: 40%;
+}
+
+.about-section .left img {
+  height: 350px;
+  width: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.about-section .topic {
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px;
+  margin-left: 80px;
+}
+
+.about-section .right {
+  text-align: justify;
+  color: white;
+}
+p{
+    text-align: justify;
+    color: white;   
+}
+
+
+

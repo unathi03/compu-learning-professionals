@@ -1,0 +1,44 @@
+.contact-info {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #9EB384;
+}
+
+.info-item {
+  margin-bottom: 15px;
+}
+
+.info-item h4 {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.info-item p {
+  margin: 0;
+  color: #333;
+}
+
+/* Styling specific items */
+.info-item:nth-child(odd) {
+  background-color: #9EB384;
+}
+
+.info-item:nth-child(even) {
+  background-color: #9EB384;
+}
+
+.info-item h4 {
+  color: #007bff; /* Blue color for heading */
+}
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+  .contact-info {
+    padding: 10px;
+  }
+
+  .info-item {
+    margin-bottom: 10px;
+  }
+}
